@@ -28,7 +28,7 @@ public class UITargetSlider : MonoBehaviour {
 
 	public void LostFocus()
 	{
-		progressUI.enabled = false;
+        progressUI.fillAmount = 0;
 		doingTweener.Kill ();
 	}
 
