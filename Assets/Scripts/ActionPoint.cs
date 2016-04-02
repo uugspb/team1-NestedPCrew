@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 using UnityEngine.UI;
 using UnityEngine.Events;
 using DG.Tweening;
 
-public class UITargetSlider : MonoBehaviour {
+public class ActionPoint : MonoBehaviour {
 
 	public float duration = 2;
 	public Ease easing = Ease.Linear;
@@ -14,16 +13,16 @@ public class UITargetSlider : MonoBehaviour {
 	private UnityEvent onComplete;
 
     [SerializeField]
-    private UnityEvent afterMove;
-
-    [SerializeField]
     private Image progressUI;
 
     [SerializeField]
     private Canvas canvas;
 
 	Tweener doingTweener;
-    
+
+    [SerializeField]
+    private GameObject[] unlockPoints;
+
 	public void PrepareClick()
 	{
         canvas.transform.LookAt(Camera.main.transform.position);
@@ -35,8 +34,8 @@ public class UITargetSlider : MonoBehaviour {
     public void MoveTo()
     {
         Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() => {
-            if(afterMove != null)
-                afterMove.Invoke();
+            for (int i = 0; i < unlockPoints.Length; i++)
+                unlockPoints[i].SetActive(true);
         });
 
         //StartCoroutine(MoveTo(transform.position, 1f));

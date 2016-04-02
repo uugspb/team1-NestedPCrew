@@ -15,7 +15,7 @@ public class SimpleFPSCamera : MonoBehaviour {
     public float maximumY = 60F;
     float rotationY = 0F;
     private bool rotationMode = false;
-    private UITargetSlider lastSlider;
+    private ActionPoint lastSlider;
 
     void Update()
     {
@@ -45,7 +45,7 @@ public class SimpleFPSCamera : MonoBehaviour {
         }
     }
 
-    private UITargetSlider Raycast()
+    private ActionPoint Raycast()
     {
         RaycastHit hit;
         //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -54,7 +54,7 @@ public class SimpleFPSCamera : MonoBehaviour {
             //suppose i have two objects here named obj1 and obj2.. how do i select obj1 to be transformed 
             if (hit.transform != null)
             {
-                return hit.transform.GetComponentInChildren<UITargetSlider>();
+                return hit.transform.GetComponentInChildren<ActionPoint>();
             }
         }
         return null;
