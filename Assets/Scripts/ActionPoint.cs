@@ -25,6 +25,12 @@ public class ActionPoint : MonoBehaviour {
     [SerializeField]
     private GameObject[] hightlights;
 
+    [SerializeField]
+    private GameObject[] activateList;
+
+    [SerializeField]
+    private GameObject[] deactivateList;
+
 	public void PrepareClick()
 	{
         canvas.transform.LookAt(Camera.main.transform.position);
@@ -43,6 +49,13 @@ public class ActionPoint : MonoBehaviour {
 
             for (int i = 0; i < hightlights.Length; i++)
                 hightlights[i].SetActive(true);
+
+            for (int i = 0; i < activateList.Length; i++)
+                hightlights[i].SetActive(true);
+
+            for (int i = 0; i < deactivateList.Length; i++)
+                hightlights[i].SetActive(true);
+
         });
 
     }
