@@ -48,7 +48,8 @@ public class SimpleFPSCamera : MonoBehaviour {
     private UITargetSlider Raycast()
     {
         RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
         if (Physics.Raycast(ray, out hit)) {
             //suppose i have two objects here named obj1 and obj2.. how do i select obj1 to be transformed 
             if (hit.transform != null)
