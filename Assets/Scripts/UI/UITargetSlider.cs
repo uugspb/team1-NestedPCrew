@@ -31,7 +31,21 @@ public class UITargetSlider : MonoBehaviour {
 
     public void MoveTo()
     {
-        Camera.main.transform.position = this.transform.position;
+        StartCoroutine(MoveTo(transform.position, 1f));
+    }
+    private IEnumerator MoveTo(Vector3 pos, float length)
+    {
+        float startTime = Time.time;
+        float fraction = 0f;
+        Vector3 startPosition = Camera.main.transform.position;
+
+        while (fraction < 1f)
+        {
+            Debug.LogError(fraction);
+            fraction = Time.time - startTime / length;
+            Camera.main.transform.position = Vector3.Lerp(startPosition, pos, fraction);
+            yield return null;
+        }
     }
 
 	public void LostFocus()

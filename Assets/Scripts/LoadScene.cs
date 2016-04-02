@@ -7,10 +7,5 @@ public class LoadScene : MonoBehaviour {
 
 	public void Load() {
 		SceneManager.LoadScene(sceneName);
-	}
-
-    public void MoveToPoint(Vector3 position)
-    {
-        Camera.main.transform.position = position;
-    }
+	}    
 }
