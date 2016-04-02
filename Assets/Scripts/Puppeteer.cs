@@ -5,8 +5,10 @@ namespace Hackathon
 {
     public class Puppeteer : MonoBehaviour
     {
+        [SerializeField]
+        private float lifetime = 10;
+
         private const float rewindSpeed = 1f;
-        private const float lifetime = 5;
         private Clock clock;
 
         private void Start()
