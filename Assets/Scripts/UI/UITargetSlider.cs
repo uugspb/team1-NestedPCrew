@@ -37,13 +37,14 @@ public class UITargetSlider : MonoBehaviour {
     {
         float startTime = Time.time;
         float fraction = 0f;
-        Vector3 startPosition = Camera.main.transform.position;
+        
+        Transform motionRoot = Camera.main.transform.parent;
+        Vector3 startPosition = motionRoot.position;
 
         while (fraction < 1f)
         {
-            Debug.LogError(fraction);
             fraction = Time.time - startTime / length;
-            Camera.main.transform.position = Vector3.Lerp(startPosition, pos, fraction);
+            motionRoot.position = Vector3.Lerp(startPosition, pos, fraction);
             yield return null;
         }
     }
