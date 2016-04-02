@@ -23,7 +23,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
   m_MTRendering: 1
-  m_MobileMTRendering: 0
+  m_MobileMTRendering: 1
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
@@ -95,10 +95,10 @@ PlayerSettings:
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  virtualRealitySupported: 0
+  virtualRealitySupported: 1
   productGUID: 0fad8f35be307b54ab80b398171c864b
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 9
+  AndroidMinSdkVersion: 22
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2
