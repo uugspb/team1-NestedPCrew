@@ -20,9 +20,6 @@ public class ActionPoint : MonoBehaviour {
 	Tweener doingTweener;
 
     [SerializeField]
-    private GameObject[] unlockPoints;
-
-    [SerializeField]
     private GameObject[] hightlights;
 
     [SerializeField]
@@ -41,23 +38,19 @@ public class ActionPoint : MonoBehaviour {
 
     public void MoveTo()
     {
-        Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() => {
+        Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() =>
+        {
             LoadScene.Instance.HideAll();
-
-            for (int i = 0; i < unlockPoints.Length; i++)
-                unlockPoints[i].SetActive(true);
 
             for (int i = 0; i < hightlights.Length; i++)
                 hightlights[i].SetActive(true);
 
             for (int i = 0; i < activateList.Length; i++)
-                hightlights[i].SetActive(true);
+                activateList[i].SetActive(true);
 
             for (int i = 0; i < deactivateList.Length; i++)
-                hightlights[i].SetActive(true);
-
+                deactivateList[i].SetActive(false);
         });
-
     }
 
 	public void LostFocus()
