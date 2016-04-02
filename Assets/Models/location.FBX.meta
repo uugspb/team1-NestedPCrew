@@ -8,18 +8,80 @@ ModelImporter:
     100000: Calque1_001_MeshPart0
     100002: Calque1_001_MeshPart1
     100004: //RootNode
+    100006: point_1_01
+    100008: point_1_02
+    100010: point_1_03
+    100012: point_1_04
+    100014: point_1_door
+    100016: point_2_01
+    100018: point_2_02
+    100020: point_2_03
+    100022: point_2_door
+    100024: start
+    100026: Town
+    100028: Town_MeshPart0
+    100030: Town_MeshPart1
     400000: Calque1_001_MeshPart0
     400002: Calque1_001_MeshPart1
     400004: //RootNode
+    400006: point_1_01
+    400008: point_1_02
+    400010: point_1_03
+    400012: point_1_04
+    400014: point_1_door
+    400016: point_2_01
+    400018: point_2_02
+    400020: point_2_03
+    400022: point_2_door
+    400024: start
+    400026: Town
+    400028: Town_MeshPart0
+    400030: Town_MeshPart1
     2300000: Calque1_001_MeshPart0
     2300002: Calque1_001_MeshPart1
     2300004: //RootNode
+    2300006: point_1_01
+    2300008: point_1_02
+    2300010: point_1_03
+    2300012: point_1_04
+    2300014: point_1_door
+    2300016: point_2_01
+    2300018: point_2_02
+    2300020: point_2_03
+    2300022: point_2_door
+    2300024: start
+    2300026: Town_MeshPart0
+    2300028: Town_MeshPart1
     3300000: Calque1_001_MeshPart0
     3300002: Calque1_001_MeshPart1
     3300004: //RootNode
+    3300006: point_1_01
+    3300008: point_1_02
+    3300010: point_1_03
+    3300012: point_1_04
+    3300014: point_1_door
+    3300016: point_2_01
+    3300018: point_2_02
+    3300020: point_2_03
+    3300022: point_2_door
+    3300024: start
+    3300026: Town_MeshPart0
+    3300028: Town_MeshPart1
     4300000: Calque1_001_MeshPart0
     4300002: Calque1_001_MeshPart1
     4300004: Calque1_001
+    4300006: Town_MeshPart0
+    4300008: Town_MeshPart1
+    4300010: start
+    4300012: point_1_door
+    4300014: point_1_04
+    4300016: point_1_01
+    4300018: point_1_02
+    4300020: point_1_03
+    4300022: point_2_01
+    4300024: point_2_03
+    4300026: point_2_02
+    4300028: point_2_door
   materials:
     importMaterials: 0
     materialName: 0
@@ -44,7 +106,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.0254
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
