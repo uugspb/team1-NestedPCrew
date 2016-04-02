@@ -112,8 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 383c44cccc27846c6a34736be50b4c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGamePoint: {fileID: 1635139475}
-  movePoint: {fileID: 1677512608}
+  startPoint: {fileID: 0}
 --- !u!4 &156664254
 Transform:
   m_ObjectHideFlags: 0
@@ -835,7 +834,9 @@ MonoBehaviour:
       PublicKeyToken=null
   progressUI: {fileID: 1764363747}
   canvas: {fileID: 913432931}
-  unlockPoints: []
+  hightlights: []
+  activateList: []
+  deactivateList: []
 --- !u!23 &1635139477
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -947,8 +948,10 @@ MonoBehaviour:
       PublicKeyToken=null
   progressUI: {fileID: 1459300461}
   canvas: {fileID: 870204234}
-  unlockPoints:
+  hightlights: []
+  activateList:
   - {fileID: 1635139475}
+  deactivateList: []
 --- !u!23 &1677512610
 MeshRenderer:
   m_ObjectHideFlags: 0
