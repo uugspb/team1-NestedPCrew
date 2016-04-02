@@ -10,8 +10,12 @@ public class UITargetSlider : MonoBehaviour {
 	public float duration = 2;
 	public Ease easing = Ease.Linear;
 
-	public UnityEvent onComplete;
-	
+    [SerializeField]
+	private UnityEvent onComplete;
+
+    [SerializeField]
+    private UnityEvent afterMove;
+
     [SerializeField]
     private Image progressUI;
 
@@ -30,7 +34,12 @@ public class UITargetSlider : MonoBehaviour {
 
     public void MoveTo()
     {
-        StartCoroutine(MoveTo(transform.position, 1f));
+        Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() => {
+            if(afterMove != null)
+                afterMove.Invoke();
+        });
+
+        //StartCoroutine(MoveTo(transform.position, 1f));
     }
     private IEnumerator MoveTo(Vector3 pos, float length)
     {
