@@ -12,19 +12,21 @@ public class UITargetSlider : MonoBehaviour {
 	public bool disableOnComplete = true;
 
 	public UnityEvent onComplete;
-	Image progressUI;
+	
+    [SerializeField]
+    private Image progressUI;
 	Tweener doingTweener;
-
-	void Start () {
-		progressUI = this.gameObject.GetComponent<Image> ();
-	}
-
+    
 	public void PrepareClick()
 	{
-		progressUI.enabled = true;
 		progressUI.fillAmount = 0;
 		doingTweener = DOTween.To(()=> progressUI.fillAmount, x=> progressUI.fillAmount = x, 1, duration).SetEase(easing).OnComplete(Completed);
 	}
+
+    public void MoveTo()
+    {
+        Camera.main.transform.position = this.transform.position;
+    }
 
 	public void LostFocus()
 	{
