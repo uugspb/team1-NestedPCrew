@@ -5,18 +5,39 @@ using System.Collections;
 public class LoadScene : MonoBehaviour {
 	private const string sceneName = "LevelOne";
 
-    [SerializeField]
-    private GameObject startGamePoint;
-    
-    [SerializeField]
-    private GameObject movePoint;
+    private GameObject[] highlights;
+    private GameObject[] points;
+
+    private static LoadScene _instance;
+    public static LoadScene Instance
+    {
+        get { return _instance; }
+    }
+    void Awake()
+    {
+        highlights = GameObject.FindGameObjectsWithTag("highlight");
+        points = GameObject.FindGameObjectsWithTag("point");
+        if(_instance != null)
+        {
+            GameObject.Destroy(_instance.gameObject);
+        }
+        _instance = this;
+    }
+
 	public void Load() {
 		SceneManager.LoadScene(sceneName);
 	}
 
-    public void ShowGameStartPoint()
+    public void HideAll()
     {
-        movePoint.SetActive(false);
-        startGamePoint.SetActive(true);
+        for (int i = 0; i < highlights.Length; i++)
+        {
+            highlights[i].SetActive(false);
+        }
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+        }
     }
 }

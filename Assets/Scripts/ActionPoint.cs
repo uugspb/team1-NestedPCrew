@@ -5,7 +5,6 @@ using UnityEngine.Events;
 using DG.Tweening;
 
 public class ActionPoint : MonoBehaviour {
-
 	public float duration = 2;
 	public Ease easing = Ease.Linear;
 
@@ -23,6 +22,9 @@ public class ActionPoint : MonoBehaviour {
     [SerializeField]
     private GameObject[] unlockPoints;
 
+    [SerializeField]
+    private GameObject[] hightlights;
+
 	public void PrepareClick()
 	{
         canvas.transform.LookAt(Camera.main.transform.position);
@@ -34,26 +36,15 @@ public class ActionPoint : MonoBehaviour {
     public void MoveTo()
     {
         Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() => {
+            LoadScene.Instance.HideAll();
+
             for (int i = 0; i < unlockPoints.Length; i++)
                 unlockPoints[i].SetActive(true);
+
+            for (int i = 0; i < hightlights.Length; i++)
+                hightlights[i].SetActive(true);
         });
 
-        //StartCoroutine(MoveTo(transform.position, 1f));
-    }
-    private IEnumerator MoveTo(Vector3 pos, float length)
-    {
-        float startTime = Time.time;
-        float fraction = 0f;
-        
-        Transform motionRoot = Camera.main.transform.parent;
-        Vector3 startPosition = motionRoot.position;
-
-        while (fraction < 1f)
-        {
-            fraction = Time.time - startTime / length;
-            motionRoot.position = Vector3.Lerp(startPosition, pos, fraction);
-            yield return null;
-        }
     }
 
 	public void LostFocus()
