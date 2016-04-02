@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Stencil Writer 1
+  m_Name: ZWriter
   m_Shader: {fileID: 4800000, guid: 4d484d3d567e84444a7e714c093d4c98, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
