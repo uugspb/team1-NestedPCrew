@@ -8,6 +8,9 @@ public class LoadScene : MonoBehaviour {
     private GameObject[] highlights;
     private GameObject[] points;
 
+    [SerializeField]
+    private GameObject startPoint;
+
     private static LoadScene _instance;
     public static LoadScene Instance
     {
@@ -23,6 +26,7 @@ public class LoadScene : MonoBehaviour {
         }
         _instance = this;
         HideAll();
+        startPoint.SetActive(true);
     }
 
 	public void Load() {
