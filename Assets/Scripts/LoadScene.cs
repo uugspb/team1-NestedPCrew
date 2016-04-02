@@ -22,6 +22,7 @@ public class LoadScene : MonoBehaviour {
             GameObject.Destroy(_instance.gameObject);
         }
         _instance = this;
+        HideAll();
     }
 
 	public void Load() {
