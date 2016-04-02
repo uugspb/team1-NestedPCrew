@@ -9,7 +9,6 @@ public class UITargetSlider : MonoBehaviour {
 
 	public float duration = 2;
 	public Ease easing = Ease.Linear;
-	public bool disableOnComplete = true;
 
 	public UnityEvent onComplete;
 	
@@ -52,13 +51,11 @@ public class UITargetSlider : MonoBehaviour {
 	public void LostFocus()
 	{
         progressUI.fillAmount = 0;
-		doingTweener.Kill ();
+		doingTweener.Kill();
 	}
 
 	public void Completed()
 	{
-		if (disableOnComplete)
-			progressUI.enabled = false;
-		onComplete.Invoke ();
+		onComplete.Invoke();
 	}
 }
