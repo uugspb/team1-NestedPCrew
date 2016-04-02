@@ -47,25 +47,15 @@ public class SimpleFPSCamera : MonoBehaviour {
 
     private UITargetSlider Raycast()
     {
-        if (graphicRaycaster == null)
-            return null;
-
-        //Create the PointerEventData with null for the EventSystem
-        PointerEventData ped = new PointerEventData(null);
-        //Set required parameters, in this case, mouse position
-        ped.position = Input.mousePosition;
-        //Create list to receive all results
-        List<RaycastResult> results = new List<RaycastResult>();
-        //Raycast it
-        graphicRaycaster.Raycast(ped, results);
-        for (int i = 0; i < results.Count; i++)
-        {
-            UITargetSlider slider = results[i].gameObject.GetComponent<UITargetSlider>();
-
-            if (slider != null)
-                return slider;
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit)) {
+            //suppose i have two objects here named obj1 and obj2.. how do i select obj1 to be transformed 
+            if (hit.transform != null)
+            {
+                return hit.transform.GetComponentInChildren<UITargetSlider>();
+            }
         }
-
         return null;
     }
 }
