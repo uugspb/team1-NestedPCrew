@@ -4204,7 +4204,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  progressUI: {fileID: 11486916}
+  progressUI: {fileID: 11413104}
   canvas: {fileID: 22372502}
   hightlights:
   - {fileID: 187768}
@@ -4479,7 +4479,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  progressUI: {fileID: 11486916}
+  progressUI: {fileID: 11489212}
   canvas: {fileID: 22372502}
   hightlights:
   - {fileID: 110176}
