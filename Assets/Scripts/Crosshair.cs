@@ -13,6 +13,9 @@ namespace Hackathon
 
         private const float offset = 0.01f;
         private const int raycastDistance = 100;
+        private const float minDistance = 1;
+        private const float defaultDistance = 20;
+        private const float maxDistance = 50;
 
         private Transform tr;
         private Transform cameraTransform;
@@ -59,6 +62,11 @@ namespace Hackathon
 
         private void SetPositionAndRotation(Vector3 position, Quaternion rotation)
         {
+            var toPosition = position - tr.position;
+            if (toPosition.magnitude < minDistance || toPosition.magnitude > maxDistance)
+            {
+                position = tr.position + toPosition.normalized*defaultDistance;
+            }
             crosshair.transform.position = position;
             crosshair.transform.rotation = rotation;
             dot.transform.position = position;
