@@ -5,8 +5,7 @@ namespace Hackathon
 {
     public class Puppeteer : MonoBehaviour
     {
-        [SerializeField]
-        private float lifetime = 10;
+        public float lifetime = 10;
 
         private const float minMovMagnitudeMouse = 25.0f;
         private const float rewindSpeed = 1f;
