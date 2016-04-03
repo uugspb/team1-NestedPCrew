@@ -31,7 +31,7 @@ public class ActionPoint : MonoBehaviour {
 	public void PrepareClick()
 	{
         canvas.transform.LookAt(Camera.main.transform.position);
-        canvas.transform.RotateAround(Vector3.up, Mathf.PI);
+        //canvas.transform.RotateAround(Vector3.up, Mathf.PI);
 		progressUI.fillAmount = 0;
 		doingTweener = DOTween.To(()=> progressUI.fillAmount, x=> progressUI.fillAmount = x, 1, duration).SetEase(easing).OnComplete(Completed);
 	}
