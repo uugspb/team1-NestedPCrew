@@ -1100,7 +1100,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.59, y: 6.84, z: -7.07}
+  m_LocalPosition: {x: 35.59, y: 8, z: -5.683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22422896}
@@ -1126,7 +1126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.16, y: 6.84, z: -9.92}
+  m_LocalPosition: {x: 38.16, y: 8, z: -9.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22433276}
@@ -2165,7 +2165,6 @@ MonoBehaviour:
   canvas: {fileID: 22395544}
   hightlights: []
   activateList:
-  - {fileID: 161648}
   - {fileID: 155822}
   - {fileID: 171926}
   deactivateList: []
@@ -2647,6 +2646,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   activateList:
   - {fileID: 183474}
   - {fileID: 100596}
@@ -2722,9 +2722,9 @@ MonoBehaviour:
   canvas: {fileID: 22388712}
   hightlights: []
   activateList:
-  - {fileID: 155822}
   - {fileID: 183474}
   - {fileID: 171926}
+  - {fileID: 133180}
   deactivateList: []
 --- !u!114 &11468768
 MonoBehaviour:
@@ -2837,7 +2837,6 @@ MonoBehaviour:
   canvas: {fileID: 22391774}
   hightlights: []
   activateList:
-  - {fileID: 161648}
   - {fileID: 155822}
   deactivateList: []
 --- !u!114 &11472066
@@ -2872,6 +2871,7 @@ MonoBehaviour:
   progressUI: {fileID: 11461078}
   canvas: {fileID: 22325052}
   hightlights:
+  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -3138,10 +3138,8 @@ MonoBehaviour:
   canvas: {fileID: 22373962}
   hightlights: []
   activateList:
-  - {fileID: 190612}
-  - {fileID: 100596}
-  - {fileID: 133180}
   - {fileID: 190068}
+  - {fileID: 133180}
   deactivateList: []
 --- !u!114 &11489212
 MonoBehaviour:
