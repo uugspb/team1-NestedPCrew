@@ -3322,7 +3322,8 @@ MonoBehaviour:
   hightlights: []
   activateList:
   - {fileID: 141750}
-  deactivateList: []
+  deactivateList:
+  - {fileID: 187768}
 --- !u!114 &11435076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3842,6 +3843,7 @@ MonoBehaviour:
   - {fileID: 171926}
   deactivateList:
   - {fileID: 0}
+  - {fileID: 190094}
 --- !u!114 &11461078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4277,7 +4279,8 @@ MonoBehaviour:
   hightlights: []
   activateList:
   - {fileID: 0}
-  deactivateList: []
+  deactivateList:
+  - {fileID: 183474}
 --- !u!114 &11475318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4830,7 +4833,8 @@ MonoBehaviour:
   hightlights: []
   activateList:
   - {fileID: 184132}
-  deactivateList: []
+  deactivateList:
+  - {fileID: 110176}
 --- !u!114 &11496636
 MonoBehaviour:
   m_ObjectHideFlags: 1
