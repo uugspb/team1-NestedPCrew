@@ -124,14 +124,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 11441176, guid: af83bf8cefc7e454faf326e719131d69, type: 2}
-      propertyPath: _recordingDuration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 11189358, guid: af83bf8cefc7e454faf326e719131d69, type: 2}
-      propertyPath: m_PlayAutomatically
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af83bf8cefc7e454faf326e719131d69, type: 2}
   m_IsPrefabParent: 0
@@ -221,13 +213,13 @@ GameObject:
   - 4: {fileID: 102801805}
   - 33: {fileID: 102801808}
   - 23: {fileID: 102801806}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: ShooterMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &102801805
 Transform:
   m_ObjectHideFlags: 0
@@ -370,6 +362,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11485728, guid: 081f5d142a36eb84ba2db41e4afb45c6, type: 2}
+      propertyPath: hightlights.Array.data[1]
+      value: 
+      objectReference: {fileID: 918886596}
     - target: {fileID: 11485728, guid: 081f5d142a36eb84ba2db41e4afb45c6, type: 2}
       propertyPath: deactivateList.Array.data[0]
       value: 
@@ -623,13 +619,13 @@ GameObject:
   - 4: {fileID: 641852297}
   - 33: {fileID: 641852300}
   - 23: {fileID: 641852298}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: HouseMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641852297
 Transform:
   m_ObjectHideFlags: 0
@@ -953,6 +949,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &918886596 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165400, guid: af83bf8cefc7e454faf326e719131d69, type: 2}
+  m_PrefabInternal: {fileID: 36608276}
 --- !u!1 &1022678802
 GameObject:
   m_ObjectHideFlags: 0
