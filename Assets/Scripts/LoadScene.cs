@@ -45,4 +45,12 @@ public class LoadScene : MonoBehaviour {
             points[i].SetActive(false);
         }
     }
+
+    public void HIdePoints()
+    {
+        for (int i = 0; i < points.Length; i++)
+        {
+            points[i].SetActive(false);
+        }
+    }
 }

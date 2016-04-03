@@ -40,7 +40,7 @@ public class ActionPoint : MonoBehaviour {
     {
         Camera.main.transform.parent.DOMove(transform.position, 1f).OnComplete(() =>
         {
-            LoadScene.Instance.HideAll();
+            LoadScene.Instance.HIdePoints();
 
             DoAction();
         });
