@@ -43,6 +43,19 @@ ModelImporter:
     100070: npc_030
     100072: npc_031
     100074: npc_032
+    100076: point_1_01
+    100078: point_1_02
+    100080: point_1_03
+    100082: point_1_04
+    100084: point_1_door
+    100086: point_2_01
+    100088: point_2_02
+    100090: point_2_03
+    100092: point_2_door
+    100094: start
+    100096: Town
+    100098: Town_MeshPart0
+    100100: Town_MeshPart1
     400000: //RootNode
     400002: Man_000
     400004: Man_001
@@ -81,6 +94,19 @@ ModelImporter:
     400070: npc_030
     400072: npc_031
     400074: npc_032
+    400076: point_1_01
+    400078: point_1_02
+    400080: point_1_03
+    400082: point_1_04
+    400084: point_1_door
+    400086: point_2_01
+    400088: point_2_02
+    400090: point_2_03
+    400092: point_2_door
+    400094: start
+    400096: Town
+    400098: Town_MeshPart0
+    400100: Town_MeshPart1
     2300000: Man_000
     2300002: Man_001
     2300004: Man_002
@@ -118,6 +144,18 @@ ModelImporter:
     2300068: npc_030
     2300070: npc_031
     2300072: npc_032
+    2300074: point_1_01
+    2300076: point_1_02
+    2300078: point_1_03
+    2300080: point_1_04
+    2300082: point_1_door
+    2300084: point_2_01
+    2300086: point_2_02
+    2300088: point_2_03
+    2300090: point_2_door
+    2300092: start
+    2300094: Town_MeshPart0
+    2300096: Town_MeshPart1
     3300000: Man_000
     3300002: Man_001
     3300004: Man_002
@@ -155,6 +193,18 @@ ModelImporter:
     3300068: npc_030
     3300070: npc_031
     3300072: npc_032
+    3300074: point_1_01
+    3300076: point_1_02
+    3300078: point_1_03
+    3300080: point_1_04
+    3300082: point_1_door
+    3300084: point_2_01
+    3300086: point_2_02
+    3300088: point_2_03
+    3300090: point_2_door
+    3300092: start
+    3300094: Town_MeshPart0
+    3300096: Town_MeshPart1
     4300000: Man_001
     4300002: npc_021
     4300004: npc_024
@@ -192,6 +242,18 @@ ModelImporter:
     4300068: npc_018
     4300070: Man_004
     4300072: Man_000
+    4300074: Town_MeshPart0
+    4300076: Town_MeshPart1
+    4300078: start
+    4300080: point_1_door
+    4300082: point_1_04
+    4300084: point_1_01
+    4300086: point_1_02
+    4300088: point_1_03
+    4300090: point_2_01
+    4300092: point_2_03
+    4300094: point_2_02
+    4300096: point_2_door
     7400000: crowd_ANIM
     9500000: //RootNode
     11100000: //RootNode
