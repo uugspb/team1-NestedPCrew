@@ -42,25 +42,30 @@ public class ActionPoint : MonoBehaviour {
         {
             LoadScene.Instance.HideAll();
 
-            for (int i = 0; i < hightlights.Length; i++)
-                hightlights[i].SetActive(true);
-
-            for (int i = 0; i < activateList.Length; i++)
-                activateList[i].SetActive(true);
-
-            for (int i = 0; i < deactivateList.Length; i++)
-                deactivateList[i].SetActive(false);
+            DoAction();
         });
     }
 
-	public void LostFocus()
-	{
+    public void LostFocus()
+    {
         progressUI.fillAmount = 0;
-		doingTweener.Kill();
-	}
+        doingTweener.Kill();
+    }
 
-	public void Completed()
-	{
-		onComplete.Invoke();
-	}
+    public void Completed()
+    {
+        onComplete.Invoke();
+    }
+
+    public void DoAction()
+    {
+        for (int i = 0; i < hightlights.Length; i++)
+            hightlights[i].SetActive(true);
+
+        for (int i = 0; i < activateList.Length; i++)
+            activateList[i].SetActive(true);
+
+        for (int i = 0; i < deactivateList.Length; i++)
+            deactivateList[i].SetActive(false);
+    }
 }
