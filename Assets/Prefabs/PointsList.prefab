@@ -4275,7 +4275,8 @@ MonoBehaviour:
   progressUI: {fileID: 11461078}
   canvas: {fileID: 22325052}
   hightlights: []
-  activateList: []
+  activateList:
+  - {fileID: 0}
   deactivateList: []
 --- !u!114 &11475318
 MonoBehaviour:
