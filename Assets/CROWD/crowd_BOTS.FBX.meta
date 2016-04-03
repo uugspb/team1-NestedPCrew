@@ -1,0 +1,363 @@
+fileFormatVersion: 2
+guid: be88510f78f5aaa44a32ced31feb46ef
+timeCreated: 1459656296
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Man_000
+    100004: Man_001
+    100006: Man_002
+    100008: Man_003
+    100010: Man_004
+    100012: npc_002
+    100014: npc_003
+    100016: npc_004
+    100018: npc_005
+    100020: npc_006
+    100022: npc_007
+    100024: npc_008
+    100026: npc_009
+    100028: npc_01
+    100030: npc_010
+    100032: npc_011
+    100034: npc_012
+    100036: npc_013
+    100038: npc_014
+    100040: npc_015
+    100042: npc_016
+    100044: npc_017
+    100046: npc_018
+    100048: npc_019
+    100050: npc_020
+    100052: npc_021
+    100054: npc_022
+    100056: npc_023
+    100058: npc_024
+    100060: npc_025
+    100062: npc_026
+    100064: npc_027
+    100066: npc_028
+    100068: npc_029
+    100070: npc_030
+    100072: npc_031
+    100074: npc_032
+    400000: //RootNode
+    400002: Man_000
+    400004: Man_001
+    400006: Man_002
+    400008: Man_003
+    400010: Man_004
+    400012: npc_002
+    400014: npc_003
+    400016: npc_004
+    400018: npc_005
+    400020: npc_006
+    400022: npc_007
+    400024: npc_008
+    400026: npc_009
+    400028: npc_01
+    400030: npc_010
+    400032: npc_011
+    400034: npc_012
+    400036: npc_013
+    400038: npc_014
+    400040: npc_015
+    400042: npc_016
+    400044: npc_017
+    400046: npc_018
+    400048: npc_019
+    400050: npc_020
+    400052: npc_021
+    400054: npc_022
+    400056: npc_023
+    400058: npc_024
+    400060: npc_025
+    400062: npc_026
+    400064: npc_027
+    400066: npc_028
+    400068: npc_029
+    400070: npc_030
+    400072: npc_031
+    400074: npc_032
+    2300000: Man_000
+    2300002: Man_001
+    2300004: Man_002
+    2300006: Man_003
+    2300008: Man_004
+    2300010: npc_002
+    2300012: npc_003
+    2300014: npc_004
+    2300016: npc_005
+    2300018: npc_006
+    2300020: npc_007
+    2300022: npc_008
+    2300024: npc_009
+    2300026: npc_01
+    2300028: npc_010
+    2300030: npc_011
+    2300032: npc_012
+    2300034: npc_013
+    2300036: npc_014
+    2300038: npc_015
+    2300040: npc_016
+    2300042: npc_017
+    2300044: npc_018
+    2300046: npc_019
+    2300048: npc_020
+    2300050: npc_021
+    2300052: npc_022
+    2300054: npc_023
+    2300056: npc_024
+    2300058: npc_025
+    2300060: npc_026
+    2300062: npc_027
+    2300064: npc_028
+    2300066: npc_029
+    2300068: npc_030
+    2300070: npc_031
+    2300072: npc_032
+    3300000: Man_000
+    3300002: Man_001
+    3300004: Man_002
+    3300006: Man_003
+    3300008: Man_004
+    3300010: npc_002
+    3300012: npc_003
+    3300014: npc_004
+    3300016: npc_005
+    3300018: npc_006
+    3300020: npc_007
+    3300022: npc_008
+    3300024: npc_009
+    3300026: npc_01
+    3300028: npc_010
+    3300030: npc_011
+    3300032: npc_012
+    3300034: npc_013
+    3300036: npc_014
+    3300038: npc_015
+    3300040: npc_016
+    3300042: npc_017
+    3300044: npc_018
+    3300046: npc_019
+    3300048: npc_020
+    3300050: npc_021
+    3300052: npc_022
+    3300054: npc_023
+    3300056: npc_024
+    3300058: npc_025
+    3300060: npc_026
+    3300062: npc_027
+    3300064: npc_028
+    3300066: npc_029
+    3300068: npc_030
+    3300070: npc_031
+    3300072: npc_032
+    4300000: Man_001
+    4300002: npc_021
+    4300004: npc_024
+    4300006: npc_022
+    4300008: npc_028
+    4300010: npc_030
+    4300012: npc_031
+    4300014: npc_027
+    4300016: npc_032
+    4300018: npc_023
+    4300020: npc_025
+    4300022: npc_029
+    4300024: npc_026
+    4300026: npc_009
+    4300028: npc_020
+    4300030: npc_006
+    4300032: Man_003
+    4300034: npc_01
+    4300036: npc_002
+    4300038: npc_005
+    4300040: npc_007
+    4300042: npc_010
+    4300044: npc_017
+    4300046: npc_015
+    4300048: npc_012
+    4300050: npc_011
+    4300052: Man_002
+    4300054: npc_003
+    4300056: npc_013
+    4300058: npc_019
+    4300060: npc_004
+    4300062: npc_008
+    4300064: npc_014
+    4300066: npc_016
+    4300068: npc_018
+    4300070: Man_004
+    4300072: Man_000
+    7400000: crowd_ANIM
+    9500000: //RootNode
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: crowd_ANIM
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 600
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Man_000
+        weight: 1
+      - path: Man_001
+        weight: 1
+      - path: Man_002
+        weight: 1
+      - path: Man_003
+        weight: 1
+      - path: Man_004
+        weight: 1
+      - path: npc_01
+        weight: 1
+      - path: npc_002
+        weight: 1
+      - path: npc_003
+        weight: 1
+      - path: npc_004
+        weight: 1
+      - path: npc_005
+        weight: 1
+      - path: npc_006
+        weight: 1
+      - path: npc_007
+        weight: 1
+      - path: npc_008
+        weight: 1
+      - path: npc_009
+        weight: 1
+      - path: npc_010
+        weight: 1
+      - path: npc_011
+        weight: 1
+      - path: npc_012
+        weight: 1
+      - path: npc_013
+        weight: 1
+      - path: npc_014
+        weight: 1
+      - path: npc_015
+        weight: 1
+      - path: npc_016
+        weight: 1
+      - path: npc_017
+        weight: 1
+      - path: npc_018
+        weight: 1
+      - path: npc_019
+        weight: 1
+      - path: npc_020
+        weight: 1
+      - path: npc_021
+        weight: 1
+      - path: npc_022
+        weight: 1
+      - path: npc_023
+        weight: 1
+      - path: npc_024
+        weight: 1
+      - path: npc_025
+        weight: 1
+      - path: npc_026
+        weight: 1
+      - path: npc_027
+        weight: 1
+      - path: npc_028
+        weight: 1
+      - path: npc_029
+        weight: 1
+      - path: npc_030
+        weight: 1
+      - path: npc_031
+        weight: 1
+      - path: npc_032
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .5
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
