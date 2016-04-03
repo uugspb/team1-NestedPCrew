@@ -15,6 +15,7 @@ namespace Hackathon
         private Vector3 mousePosition;
 
         private bool beforeZero { get { return clock.time <= 0; } }
+        private bool afterLifetime { get { return clock.time >= lifetime; } }
 
         private void Start()
         {
@@ -54,6 +55,10 @@ namespace Hackathon
             if (beforeZero)
             {
                 Play();
+            }
+            else if (afterLifetime)
+            {
+                Rewind();
             }
         }
 
